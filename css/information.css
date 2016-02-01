@@ -1,0 +1,115 @@
+ * {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+#iall {
+	width: 980px;
+	margin: 0 auto;
+}
+/*最上面导航条*/
+/*top 用了margin和padding为零，还是不贴边*/
+
+#itop {
+	margin-top: 0;
+	padding-top: 0;
+	height: 26px;
+	width: 980px;
+	color: rgba(45, 44, 44, 0.6);
+	font-size: 13px;
+	font-family: arial;
+	background: #F2F2F2;
+}
+#itop a {
+	color: rgba(45, 44, 44, 0.6);
+}
+#itop a:hover {
+	color: red;
+	text-decoration: underline;
+}
+#iwelcome {
+	display: block;
+	float: left;
+	padding-left: 25px;
+	padding-top: 4px;
+}
+#iwelcome a {
+	padding-top: 1px;
+}
+.ititle {
+	width: 960px;
+	height: 35px;
+	/*border: 1px solid #CCCCCC;*/
+	padding-left: 20px;
+	font-size: 22px;
+	padding-top: 7px;
+    color:rgb(247,255,255);
+    font-weight:bold;
+}
+/*物品详情*/
+
+#ibasic_information {
+	width: 980px;
+	/*border: 1px solid red;*/
+    background-color:rgba(253,254,255,0.7);
+	height: 400px;
+    
+}
+/*物品大概介绍*/
+#iimage{padding-top:40px;padding-left:30px;}
+#itable {
+	width: 320px;
+	font-size: 20px;
+	margin-left: 330px;margin-top: -280px;font-size:18px;
+	/*border: 1px solid white;
+    color:#efefef;*/
+   font-weight:bold; color:rgb(30,100,170);
+    padding-top:20px;
+    padding-left:20px;
+}
+/*用户资料*/
+
+#iiuser {
+	margin-top: -250px;
+	font-size: 14px;
+	/*border: 1px solid #005580;*/
+	float: right;
+    margin-right:30px;
+	width: 260px; color:rgb(60,130,200);
+    font-weight:bold;
+   
+}
+/*#iiuser table th,td{border-collapse:collapse; border:1px solid red;}*/
+#iiuser th td{font-size: 20px;color:#005580;}
+#iiuser tr td{padding-left: 5px;text-align: center;}
+/*物品瑕疵*/
+
+/*#iflaw {
+	width: 980px;
+	height: 200px;
+	border: solid 1px #003BB3;
+}*/
+/*物品介绍*/
+
+#iintroduce {
+	/*width: 980px;
+	height: 200px;
+	border: solid 1px #003BB3;*/
+}
+/*易物留言*/
+
+#imessage {
+	/*width: 980px;
+	height: 280px;
+	border: solid 1px #003BB3;*/
+    background-color:rgba(253,254,255,0.7);margin-bottom:50px;padding-bottom:20px;
+}
+#iarea {
+	margin-left: 50px;    padding-top:30px;
+}
+#ibutton {
+	margin-left: 780px;
+
+}

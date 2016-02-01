@@ -1,0 +1,149 @@
+ * {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+body {
+     /*background:url('../img/background-make (2).png');background-repeat:repeat-x;background-color: rgb(244,244,246);*/ 
+  background-image:url('../img/bgc.jpg');background-position: center;background-attachment: fixed;/* */
+}
+#iall {
+	width: 980px;
+	margin: 0 auto;
+}
+/*最上面导航条*/
+
+#itop {
+	margin-top: 0;
+	padding-top: 0;
+	height: 26px;
+	width: 980px;
+	color: rgba(45, 44, 44, 0.6);
+	font-size: 13px;
+	font-family: arial;
+	background: #F2F2F2;
+}
+#itop a {
+	color: rgba(45, 44, 44, 0.6);
+}
+#itop a:hover {
+	color: red;
+	text-decoration: underline;
+}
+#iwelcome {
+	display: block;
+	float: left;
+	padding-left: 25px;
+	padding-top: 4px;
+}
+#iwelcome a {
+	padding-top: 1px;
+}
+/*#Menu1 ul{background-image:url('../img/top_nav.png');}
+#Menu1 ul li a:active:{color:red;border:none;}*/
+/*管理中心的大div*/
+
+.SiteMapPath1 span{display:block;float:left;height:20px; border-top:1px solid rgba(200,200,200,0.4);color:#efefef;padding:5px;}
+#imangement_center {
+	width: 980px;
+	/*height: 337px;*/
+	/*border: 1px solid black;*/
+    margin-top:1px;
+}
+#itable_nav {
+	font-size: 16px;
+	border-collapse: collapse;
+  /* margin-top: 17px;*/ 
+}
+#itable_nav td {
+	height: 42px;
+	/*border-top:2px solid rgb(220,220,220);
+	border-bottom:2px solid rgb(220,220,220);
+	border-left:1px solid rgb(230,230,230);
+	border-right:2px solid rgb(218,218,218);*/
+    border-top:1px solid rgba(200,200,200,0.3);
+
+	background:rgba(100,100,100,0.3);
+    padding-left:5px;
+    padding-right:5px;
+}
+#itable_nav td:hover{/*background-color:rgb(250,250,251);*/background-color:rgba(0,161,241,0.4);}
+#itable_nav a{
+	/*color: rgb(25,71,200);*/
+    color:#efefef;
+    font-weight: bold;
+	}
+#itable_nav a:hover {
+	/*color: rgb(255,40,5);*/color:#efefef;
+	text-decoration: underline;
+}
+/*右边的资料*/
+#iinformation {
+	/*float: right;*/
+	width:782px;
+    color:rgb(40,40,40);
+    border-top:1px solid rgba(200,200,200,0.3);
+     border-right:1px solid rgba(18,78,151,0.5);
+     border-left:1px solid rgba(100,100,100,0.4);
+	/*border-top: 1px solid rgb(220,220,220);
+	border-bottom: 1px solid rgb(220,220,220);*/
+	margin-top: -344px;
+    padding-top:36px;
+    margin-left:177px;
+    padding-left:20px;
+    padding-bottom:200px;
+   background:rgba(200,200,200,0.3);/*background-color:rgba(0,161,241,0.4);*/
+ 
+	}
+/*上传头像*/
+#iuser_photo {
+	width: 300px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 40px;
+    margin-bottom:50px;
+    margin-left:0px;
+	/*border: 1px solid #005580;*/
+}
+#iphoto {
+	width: 200px;
+	margin-left: 45px;
+    margin-top:5px;
+	height: 200px;
+	border: 1px solid #006DCC;/***/
+}
+#iuser_data {
+	font-size: 13px;
+	font-weight: bold;
+	width: 400px;
+	float: left;
+	/*border: 1px solid #006DCC;*/
+	margin-top: -300px;
+    margin-left:330px;
+}
+#iuser_data table{margin-top:20px;}
+#iuser_data table td {
+	font-size:14px;padding-top:3px;padding-bottom:3px;
+}
+
+#ifooter {
+	width: 978px;
+    margin:auto 0;
+	height: 30px;
+	border-top: 3px solid rgb(150,150,150);
+	font-size: 12px;
+	text-align: center;
+   /*position:absolute;top:100%; 
+   background-color:white;*/
+}
+#ifooter a{color: rgb(150,150,150);padding: 30px;}
+#ifooter div{margin-left:163px;float:left;margin-top: 7px;}
+#ifooter a:hover{color: #fff;text-decoration: underline;}
+
+.border_rq_sent{border-collapse:collapse;border:1px solid rgba(180,180,180,0.8);height:30px;text-align:center;width:630px;font-weight:bold; color:rgb(220,220,220);}
+.div_rq_sent a{color:#efefef;}
+.div_rq_sent th{background:rgb(20,80,154);}
+/*.has_publish tr td{width:250px;font-size:14px;color:rgb(40,40,40);}*/

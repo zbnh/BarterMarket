@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="首页"  description="返回首页">
+    <siteMapNode url="~/managementIndex.aspx" title="管理中心"  description="管理中心" >
+    <siteMapNode url="~/publish.aspx" title="发布物品"  description="发布物品" />
+      <siteMapNode url="~/hasPublished.aspx" title="查看已发布"  description="查看已发布" />
+      <siteMapNode url="~/requestReceived.aspx" title="我收到的交换请求"  description="我收到的交换请求" />
+      <siteMapNode url="~/requestSent.aspx" title="我发出的交换请求"  description="我发出的交换请求" />
+      <siteMapNode url="~/successfulTrade.aspx" title="成功的交易记录"  description="成功的交易记录" />
+      <siteMapNode url="~/refusedTrade.aspx" title="拒绝的交易记录"  description="拒绝的交易记录" />
+      <siteMapNode url="~/infoModification.aspx" title="资料修改"  description="资料修改" />
+      <siteMapNode url="~/muCollection.aspx" title="我的收藏"  description="我的收藏" />
+       </siteMapNode>
+    <siteMapNode url="~/SearchType.aspx" title="搜索"  description="搜索" />
+    <siteMapNode url="~/Reg.aspx" title="注册"  description="注册" />
+    <siteMapNode url="~/Login.aspx" title="登陆"  description="登陆" />
+    </siteMapNode>
+</siteMap>

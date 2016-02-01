@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+		<title>test</title>
+		<link rel="stylesheet" href="css/Home.css" />
+        <link rel="stylesheet" href="css/management_center_h.css"/>
+    <link href="css/information.css" rel="stylesheet" />
+		<script src="js/jquery.js"></script>
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="iall">
+        <div id="itop">	 			
+            <asp:HyperLink runat="server" ID="iwelcome" NavigateUrl="~/Default.aspx">河南大学二手交易社区</asp:HyperLink>
+            <div style="position:relative;float:left;padding:4px;">
+            <asp:HyperLink ID="ilogin" runat="server" style="cursor:pointer;" NavigateUrl="~/Login.aspx">请登录</asp:HyperLink>
+            <asp:HyperLink ID="ireg" runat="server" NavigateUrl="~/Reg.aspx">免费注册</asp:HyperLink>
+            </div>
+                <div style="padding:2px;" >
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                  <asp:Label ID="Label1" runat="server" Text="Label"  ></asp:Label>
+                <asp:Button ID="Button1" runat="server" Text="注销"  OnClick="Button1_Click"  CausesValidation="False" UseSubmitBehavior="False"/>
+            <div style="float:right;padding:2px;"><asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="首页" ToolTip="首页" Value="首页"></asp:MenuItem>
+                <%--<asp:MenuItem NavigateUrl="~/publish.aspx" Text="发布物品" ToolTip="发布物品" Value="发布物品"></asp:MenuItem>--%>
+                <asp:MenuItem NavigateUrl="~/managementIndex.aspx" Text="管理中心" ToolTip="管理中心" Value="管理中心">
+                    <asp:MenuItem NavigateUrl="~/hasPublished.aspx" Text="查看已发布" Value="查看已发布"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/requestReceived.aspx" Text="我收到的请求" Value="我收到的请求"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/requestSent.aspx" Text="我发出的请求" Value="我发出的请求" ></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/successfulTrade.aspx" Text="成功的交易记录" Value="成功的交易记录" ></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/refusedTrade.aspx" Text="拒绝的交易记录" Value="拒绝的交易记录"></asp:MenuItem>
+                    <asp:MenuItem Text="我的收藏" Value="我的收藏" ToolTip="我的收藏" NavigateUrl="~/muCollection.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu></div>
+                </div>
+        </div>
+        <div id="iheader">
+				<div id="imain_search">
+                    		&nbsp;<asp:TextBox ID="itext_search" runat="server"></asp:TextBox>
+                            &nbsp;<asp:Button ID="isubmit_search" runat="server" Text="搜索" CausesValidation="False" UseSubmitBehavior="False" OnClick="isubmit_search_Click" />
+					</div>
+				</div>
+        <%--<asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>--%>
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+        <div id="ifooter">
+				<div><a href="#">关于我们</a></div>
+				<div><a href="#">联系我们</a></div>
+				<div><a href="#">帮助</a></div>
+			</div>
+    </div>
+    </form>
+</body>
+</html>

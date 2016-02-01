@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+		<title>test</title>
+		<link rel="stylesheet" href="css/Home.css" />
+        <link rel="stylesheet" href="css/management_center_h.css"/>
+		<script src="js/jquery.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .title {
+            margin-left: 40px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="iall">
+        <div id="itop">	 			
+				<asp:HyperLink runat="server" ID="iwelcome" NavigateUrl="~/Default.aspx">河南大学二手交易社区</asp:HyperLink>
+            
+            <div style="position:relative;float:right;padding:4px;">
+            <asp:HyperLink ID="ilogin" runat="server" style="cursor:pointer;" NavigateUrl="~/Login.aspx">请登录</asp:HyperLink>
+            <asp:HyperLink ID="ireg" runat="server" NavigateUrl="~/Reg.aspx">免费注册</asp:HyperLink>
+            </div>
+                <div style="padding:2px;" >
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                  <asp:Label ID="Label1" runat="server" Text="Label"  ></asp:Label>
+                <asp:Button ID="Button1" runat="server" Text="注销"  OnClick="Button1_Click"  CausesValidation="False" UseSubmitBehavior="False"/>
+            <div style="float:right;padding:2px;"><asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="首页" ToolTip="首页" Value="首页"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/publish.aspx" Text="发布物品" ToolTip="发布物品" Value="发布物品"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/managementIndex.aspx" Text="管理中心" ToolTip="管理中心" Value="管理中心">
+                    <asp:MenuItem NavigateUrl="~/hasPublished.aspx" Text="查看已发布" Value="查看已发布"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/requestReceived.aspx" Text="我收到的请求" Value="我收到的请求"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/requestSent.aspx" Text="我发出的请求" Value="我发出的请求"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/successfulTrade.aspx" Text="成功的交易记录" Value="成功的交易记录"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/refusedTrade.aspx" Text="拒绝的交易记录" Value="拒绝的交易记录"></asp:MenuItem>
+                    <asp:MenuItem Text="我的收藏" Value="我的收藏" ToolTip="我的收藏" NavigateUrl="~/muCollection.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                
+            </Items>
+        </asp:Menu></div>
+                </div>
+        </div>
+        <div id="iheader">
+				<div id="imain_search">
+                    		&nbsp;<asp:TextBox ID="itext_search" runat="server"></asp:TextBox>
+                            &nbsp;<asp:Button ID="isubmit_search" runat="server" Text="搜索" CausesValidation="False" UseSubmitBehavior="False" OnClick="isubmit_search_Click" />
+					</div>
+				</div>
+        <div style="width:980px;height:30px;background:rgba(200,200,200,0.6);">
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server" CssClass="SiteMapPath1" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+            <CurrentNodeStyle ForeColor="#333333" />
+            <NodeStyle Font-Bold="True" ForeColor="#666666" />
+            <PathSeparatorStyle Font-Bold="True" ForeColor="#1C5E55" />
+            <RootNodeStyle Font-Bold="True" ForeColor="#1C5E55" />
+        </asp:SiteMapPath>
+        </div>
+        <div id="imangement_center">
+				<table id="itable_nav">
+					<tbody><tr>
+						<td><div><img src="img/mm_c_xh.png" style="height: 26px; width: 30px;"><a href="managementIndex.aspx">管理中心首页</a>
+					</td>
+					</tr>
+					<tr>
+						<td><img src="img/mm_c_xr.png" style="height: 26px; width: 30px"><a href="publish.aspx" >发布物品</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/mm_c_xcr.png" style="height: 26px; width: 30px"><a href="hasPublished.aspx">查看已发布</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/mm_c_xrr.png" style="height: 26px; width: 30px"><a href="requestReceived.aspx">我收到的交换请求</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/mm_c_xrs.png" style="height: 27px; width: 30px"><a href="requestSent.aspx">我发出的交换请求</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/mm_c_xrc.png" style="height: 26px; width: 30px"><a href="successfulTrade.aspx">成功的交换记录</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/mm_c_xrf.png" style="height: 26px; width: 30px"><a href="refusedTrade.aspx">拒绝的交换记录</a>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/mm_c_im.png" style="height: 30px; width: 30px"><a href="muCollection.aspx">我的收藏</a>
+						</td>
+					</tr>
+				</tbody></table>
+				<div id="iinformation">
+					<%--<p class="title">发布物品</p>--%>
+					        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+				</div>
+                <br />
+                <br />
+                <br />
+                <br />
+            <br />
+			</div>
+
+        <div id="ifooter">
+				<div><a href="#">关于我们</a></div>
+				<div><a href="#">联系我们</a></div>
+				<div><a href="#">帮助</a></div>
+			</div>
+    </div>
+    </form>
+</body>
+</html>
